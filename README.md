@@ -4,12 +4,17 @@ A Claude Code skill that enables powerful structural code search using Abstract 
 
 ## What is This?
 
-This skill teaches Claude how to write and use ast-grep rules to perform advanced code searches. Unlike traditional text-based search (grep, ripgrep), ast-grep understands the structure of your code, allowing you to find patterns like:
+Agent Skills are modular capabilities that extend Claude’s functionality. Each Skill packages instructions, metadata, and optional resources (scripts, templates) that Claude uses automatically when relevant.
+
+ast-grep skill teaches Claude how to write and use ast-grep rules to perform advanced code searches. Unlike traditional text-based search (grep, ripgrep), ast-grep understands the structure of your code, allowing you to find patterns like:
 
 - "Find all async functions that don't have error handling"
 - "Locate all React components that use a specific hook"
 - "Find functions with more than 3 parameters"
 - "Search for console.log calls inside class methods"
+
+
+
 
 ## Prerequisites
 
@@ -43,6 +48,8 @@ cp -r ast-grep ~/.claude-code/skills/
 ```
 
 2. The skill should be automatically detected by Claude Code. You can verify by checking available skills in Claude Code.
+
+3. You will need to ask Claude to use this skill explicitly in your queries, like "Use ast-grep to find...". Claude code, as of Nov 2025, cannot pick up ast-grep for proper use cases automatically.
 
 ## How to Use
 
