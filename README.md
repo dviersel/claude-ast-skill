@@ -42,7 +42,7 @@ ast-grep --version
 
 ```bash
 # If you have a skills directory configured
-cp -r ast-grep ~/.claude-code/skills/
+cp -r ast-grep ~/.claude/skills/
 
 # Or place it wherever your Claude Code skills are located
 ```
